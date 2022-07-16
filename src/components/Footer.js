@@ -1,5 +1,6 @@
 import '../css/normalize.css';
 import '../css/style.css';
+import '../css/media.css';
 
 const Footer = () => {
   return(
@@ -20,16 +21,17 @@ const Footer = () => {
             <h3 className="footer-title">Преимущества</h3>
             <ul className="footer-list list-reset">
               <li className="footer-item">
-                <a href="#" className="footer-link">Качественная работа</a>
+                <a src='../'/>
+                <p className="footer-link">Качественная работа</p>
               </li>
               <li className="footer-item">
-                <a href="#" className="footer-link">Материалы высокого качества</a>
+                <p className="footer-link">Материалы высокого качества</p>
               </li>
               <li className="footer-item">
-                <a href="#" className="footer-link">Быстрый монтаж покрытия</a>
+                <p className="footer-link">Быстрый монтаж покрытия</p>
               </li>
               <li className="footer-item">
-                <a href="#" className="footer-link">Гарантии от&nbsp;10&nbsp;лет</a>
+                <p className="footer-link">Гарантии от&nbsp;10&nbsp;лет</p>
               </li>
             </ul>
           </div>
@@ -37,13 +39,13 @@ const Footer = () => {
             <h3 className="footer-title">Компания</h3>
             <ul className="footer-list list-reset">
               <li className="footer-item">
-                <a href="#" className="footer-link">О нас</a>
+                <a href="/#" className="footer-link">О нас</a>
               </li>
               <li className="footer-item">
-                <a href="#" className="footer-link">Контакты</a>
+                <a href="/#" className="footer-link">Контакты</a>
               </li>
               <li className="footer-item">
-                <a href="#" className="footer-link">Наши работы</a>
+                <a href="/#" className="footer-link">Наши работы</a>
               </li>
             </ul>
           </div>
@@ -54,13 +56,15 @@ const Footer = () => {
               <li className="social-item">
                 <a 
                   href="https://www.instagram.com/qazmozpol/" 
-                  target={"_blank"} 
+                  target={"_blank"}
+                  rel="noreferrer" 
                   className="social-link">Instagram</a>
               </li>
               <li className="social-item">
                 <a 
-                  href="#" 
-                  target={"_blank"} 
+                  href="/#" 
+                  target={"_blank"}
+                  rel="noreferrer" 
                   className="social-link">WhatsApp</a>
               </li>
             </ul>
@@ -68,7 +72,7 @@ const Footer = () => {
           
         </div>
         <div className="footer-bottom">
-          <a className="logo">QAZMOZPOL</a>
+          <a href="/#" className="logo">QAZMOZPOL</a>
         </div>
       </div>
     </footer>

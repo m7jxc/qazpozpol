@@ -2,6 +2,7 @@ import Quote from "./Quote";
 import Services from "./Services";
 import '../css/normalize.css';
 import '../css/style.css';
+import '../css/media.css';
 
 const Main = () => {
   return(
