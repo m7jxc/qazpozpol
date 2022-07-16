@@ -3,8 +3,8 @@ import '../css/style.css';
 import '../css/media.css';
 
 const Footer = () => {
-  return(
-    <footer className="footer">
+  return (
+    <footer className="footer" id='footer'>
       <div className="container">
         <div className="footer-top">
           <div className="footer-contacts-item">
@@ -21,7 +21,7 @@ const Footer = () => {
             <h3 className="footer-title">Преимущества</h3>
             <ul className="footer-list list-reset">
               <li className="footer-item">
-                <a src='../'/>
+                <a src='../' />
                 <p className="footer-link">Качественная работа</p>
               </li>
               <li className="footer-item">
@@ -54,22 +54,22 @@ const Footer = () => {
             <a href="mailto:qazmozpol@gmail.com" className="footer-mail">qazmozpol@gmail.com</a>
             <ul className="social list-reset">
               <li className="social-item">
-                <a 
-                  href="https://www.instagram.com/qazmozpol/" 
-                  target={"_blank"}
-                  rel="noreferrer" 
+                <a
+                  href="https://www.instagram.com/qazmozpol/"
+                  target="_blank"
+                  rel="noreferrer"
                   className="social-link">Instagram</a>
               </li>
               <li className="social-item">
-                <a 
-                  href="/#" 
-                  target={"_blank"}
-                  rel="noreferrer" 
+                <a
+                  href="https://wa.me/77012685959"
+                  target="_blank"
+                  rel="noreferrer"
                   className="social-link">WhatsApp</a>
               </li>
             </ul>
           </div>
-          
+
         </div>
         <div className="footer-bottom">
           <a href="/#" className="logo">QAZMOZPOL</a>

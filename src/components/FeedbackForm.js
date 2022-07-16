@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
-import './FeedbackForm.css';
+import '../css/FeedbackForm.css';
 
-const FeedbackForm = () => {
+const FeedbackForm = ({ setShow }) => {
 
   const {
     register,
@@ -16,7 +16,8 @@ const FeedbackForm = () => {
     reset();
   }
 
-  return(
+
+  return (
     <div className="form-container">
       <div className="form-content">
         <div className="left-side">
@@ -35,25 +36,26 @@ const FeedbackForm = () => {
             <div className="input-box">
               <input
                 type="text"
-                id='name' 
+                id='name'
                 placeholder="Ваше имя"
-                {...register('Имя', {required: "Поле обязательно к заполнению"})}
-                />
+                {...register('Имя', { required: "Поле обязательно к заполнению" })}
+              />
             </div>
             <div className="errors">{errors?.Имя?.message}</div>
             <div className="input-box">
-              <input 
+              <input
                 type="tel"
                 id="tel"
                 placeholder="Введите телефон"
-                {...register('Телефон', {required: "Поле обязательно к заполнению"})}
-                />
+                {...register('Телефон', { required: "Поле обязательно к заполнению" })}
+              />
             </div>
             <div className="errors">{errors?.Телефон?.message}</div>
             <div className="button">
-              <input type="submit" value="Отправить"/>
+              <input type="submit" value="Отправить" />
             </div>
           </form>
+          <button onClick={setShow} className="close-form">Close</button>
         </div>
       </div>
     </div>
